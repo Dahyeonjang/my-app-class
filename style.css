@@ -197,3 +197,6 @@ mark{background:transparent;color:#f5da79}
  .cost-section .wrap>p.cost-lead{font-size:15px}
 }
 .audience .single{max-width:720px}
+.ask-link{display:block;width:max-content;margin:10px 0 0;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.closing .ask-link{margin:12px auto 0;color:inherit;opacity:.75}
+.price .ask-link{margin-top:10px}
