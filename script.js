@@ -1,0 +1,4 @@
+const bar=document.querySelector('.mobile-bar');
+function updateBar(){const hero=document.querySelector('#hero-apply').getBoundingClientRect(),apply=document.querySelector('#apply').getBoundingClientRect(),closing=document.querySelector('#closing').getBoundingClientRect();bar.hidden=!(hero.bottom<0&&!(apply.top<innerHeight&&apply.bottom>0)&&!(closing.top<innerHeight&&closing.bottom>0));}
+addEventListener('scroll',updateBar,{passive:true});addEventListener('resize',updateBar);updateBar();
+let noticeTimer;document.querySelectorAll('.apply-link').forEach(a=>a.addEventListener('click',e=>{if(a.getAttribute('href').includes('{{')){e.preventDefault();const notice=document.querySelector('#notice');notice.hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.hidden=true,3500)}}));
